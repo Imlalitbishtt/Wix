@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIX</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" 
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" 
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+      *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+       }
+    .row{
+      max-width: 100%;
+      display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     padding-left: 130px;
+     padding-right: 130px;
+    }
+    .col-2{
+     flex-basis: 50%;
+     min-width: 600px;
+      } 
+    
+    .col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+    }
+    
+    .col-2 h1, h4, button{
+      margin-top: 40px;
+    }
+    
+    .security-1{
+      font-size: 40px;
+      display: flex;
+    }
+    
+    .text-muted{
+      font-weight: lighter;
+    }
+    .icon {
+      margin-top: 40px;
+      font-size: 40px;
+      margin-right: 10px;
+      display: inline-flex;
+      padding-right: 47px;
+     }
+     .icon h6{
+      padding-left: 10px;
+     }  
+     .dabba{
+       padding: 120px;
+       background-color: orange; 
+     }
+     .line{
+          display: flex;
+     }
+      .word{
+       padding-left: 150px;
+       text-align: left;
+      font-size: 2.5em;
+      font-weight: 450;
+     }
+
+     .offer{
+       padding-top: 100px;
+       padding-bottom: 24px;
+       font-weight: 450;
+     }
+
+     .class {
+      display: flex;
+      width: 226px;
+      height: 300px;
+       gap: 54px;
+       margin-top: 80px;
+     }
+
+     .text{
+       display: flex; 
+       padding-left: 2px;
+       padding-top: 60px;
+       gap: 152px;
+     }
+     .para{
+       display: flex; 
+       min-width: 232px;
+       min-height: 128px;
+       padding-top: 11px;
+       padding-left: 2px;
+       font-size: 17px;
+       font-weight: lighter;
+       gap: 50px;
+     }
+
+     .row-2{
+      max-width: 100%;
+      display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     padding-left: 130px;
+     padding-right: 130px;
+    }
+    .coul-2{
+     flex-basis: 50%;
+     min-width: 600px;
+      } 
+    .coul-2 img{
+    max-width: 80%;
+    padding: 50px 0;
+    }
+    .con{
+      margin-left: 146px;
+    }
+
+    .coul-sm{
+        padding-top: 25px;
+    }
+    .security{
+      font-size: 40px;
+      display: flex;
+    }
+
+    .icon-1 {
+      margin-top: 40px;
+      font-size: 40px;
+      margin-right: 10px;
+      display: inline-flex;
+      padding-right: 11px;
+     }
+     .icon-1 h6{
+      font-weight: lighter;
+      padding-left: 10px;
+     } 
+     .pink{
+       background-color: rgb(255, 230, 255);
+       padding: 190px;
+     }
+     .pink p{
+       padding-top: 30px;
+     }
+     .icon-2{
+      margin-top: 84px;
+      font-size: 40px;
+      margin-right: 145px;
+      display: inline-flex;
+      font-style: oblique;
+      }
+      .icon-2 h6{
+        padding-left: 5px;
+      }
+    
+
+      
+      @media only screen and (max-width: 600px){
+        *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          flex-basis: 100%;
+        }
+        .navbar{
+          width: 500px;
+        }
+        .navbar h3{
+          font-size: 60px;
+        }
+        .text-muted{
+        font-size: 30px;  
+        }
+        .row{
+          width: 500px;
+          text-align: center;
+          align-items: center;
+          flex-wrap: wrap;
+    }
+      .row h1{
+        text-align: center;
+        padding-left: 154px;
+      }
+      .row button{
+        text-align: center;
+        margin-left: 159px;
+        font-size: 30px;
+      }
+      .row h4{
+        text-align: center;
+        padding-left: 156px;
+      }
+      .security-1{
+        display: block;
+        font-size: 30px;
+        padding-left: 52px;
+      }
+      .icon{
+        text-align: center;
+        padding-left: 140px;
+        display: block;
+        font-size: 60px;
+      }
+      .col-2 img{
+        width: 500px;
+        margin-left: 103px;
+        align-items: center;
+      }
+      .dabba{
+        width: 500px;
+      }
+      .line{
+        padding: 100px;
+        display: inline;
+       }
+       .col-sm{
+         padding-right: 50px;
+       }
+       .word {
+         text-align: center;
+         padding-left: 7px;
+       }
+      .col-sm p{
+      display: block;
+      text-align: center;
+      font-weight: 450;
+     }
+     .offer{
+       width: 480px;
+       text-align: center;
+       font-size: 40px;
+     }
+     .paragraph{
+       width: 388px;
+       padding-left: 70px;
+       font-size: 20px;
+       text-align: center;
+     }
+   
+     .class{
+       display: inline-block;
+       width: 300px;
+       padding-left: 95px;
+     }
+     .pic{
+       margin-left: 13px;
+     }
+     .text,.para{
+       overflow: hidden;
+      display: none;
+        width: 300px;
+        padding-left: 95px;
+       }
+ 
+      .coul-2 img{
+        display: inline;
+        margin-top: 197px;
+      }
+      .coul-2 img{
+        max-width: 588px;
+        padding-left: 121px;
+      }
+      .con h1, .coul-sm p{
+        display: inline;
+        font-size: 30px;
+        text-align: center;
+        margin: -3px;
+      }
+      .con br{
+        padding-left: 30px;
+      }
+      .security{
+        display: block;
+        font-size: 30px;
+      }
+      .icon-1{
+        font-weight: bold;
+        font-size: 30px;
+        margin-top: 65px;
+        margin-bottom: 75px;
+      }
+      .icon-1 h6{
+        padding-left: 0px;
+      }
+      .pink{
+        width: 500px;
+      }
+      .container{
+        padding: 55px;
+        display: inline;
+      }
+      .pink h2{
+        text-align: center;
+      }
+      .container p{
+        text-align: center;
+
+      }
+      .ppp{
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-warning text-dark">
+  <a class="navbar-brand text-body" href="#">
+    <h3 m-4> WeDu </h3>
+    <h6 class="text-muted">Communicate.Collaborate. Create</h6>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link text-body m-3" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link text-body m-3" href="#">Product</a>
+      </li>
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle text-body m-3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+          Pricing Plan
+        </a>
+        <div class="dropdown-menu text-body m-3" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item activem-3 ">
+        <a class="nav-link text-body text-right m-3">Contact</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2 text-body " type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0 bg-info text-body " type="submit">Search</button>
+    </form>
+    
+  </div>
+</nav>
+
+
+      
+       <div class="row">
+            <div class="col-2">
+              <h1>Communicate.<br> Collaborate. Create</h1>
+              <h4 class="lead" >WeDu provides an effective and powerful <br> way to manage your projects</h4>
+              <button type="button" style="background-color: black;" class="btn btn-dark">Get Started</button> <br>
+                 
+                  <div class="security-1">
+                    <span class="icon"> <i class="fa fa-expeditedssl"></i> <h6>Speed & <br>Security </h6></span>              
+                    <span class="icon"> <i class="fa fa-briefcase"></i> <h6>Flexibility & <br> Scalability</h6></span>
+                    <span class="icon"> <i class="fa fa-cube"></i> <h6>Better <br>Collaboration</h6></span>
+                  </div>
+             </div>     
+
+            <div class="col-2">
+              <img src="child1.png" alt="">
+            </div>
+        </div>
+
+
+    <div class="dabba ">
+        <div class="line">
+             <div class="col-sm">
+                <h2 class="word"> With the Right <br>Software, Great<br> Things Can Happen</h2>
+              </div>
+                  <div class="col-sm">
+                    <p> I'm a paragraph. Click here to add your own text and edit me. It’s<br> 
+                      easy. Just click “Edit Text” or double click me to add your own <br> content
+                      and make changes to the font. Feel free to drag and drop<br> me anywhere you like on your page.
+                        I’m a great place for you to tell<br> a story and let your users know a little more about you.</p>
+                  </div>
+        </div>
+    </div>
+
+          <div class="container">
+            <h2 class="offer">What We Offer</h2>
+            <p class="paragraph">I'm a paragraph. Click here to add your own text and edit me. It’s easy.<br>
+               Just click “Edit Text” or double click me to add your own content and <br> make changes to the font.</p>
+                                 
+
+                  <div class="image-4">  
+                    <div class="class">                 
+                      <img src="image-1.jpg" class="pic" alt="">
+                      <img src="image-2.jpg" alt="">
+                      <img src="image-3.jpg" alt="">
+                      <img src="image-4.jpg" alt="">
+                    </div>
+                  </div>
+                  
+                      <div class="text">
+                            <h3>Workflows<br> That Work</h3>   
+                            <h3>Workflows<br> That Work</h3> 
+                            <h3>Workflows<br> That Work</h3> 
+                            <h3>Workflows<br> That Work</h3> 
+                      </div>
+                      
+                      <div class="para">
+                            <p>I'm a paragraph. Click here to add your own text and edit me. 
+                              I’m a great place for you to tell a story and let your users know a 
+                              little more about you.</p>
+
+                            <p>I'm a paragraph. Click here to add your own text and edit me. 
+                            I’m a great place for you to tell a story and let your users know a
+                            little more about you.</p>
+
+                            <p>I'm a paragraph. Click here to add your own text and edit me. 
+                            I’m a great place for you to tell a story and let your users know a
+                            little more about you.</p>
+
+                            <p>I'm a paragraph. Click here to add your own text and edit me. 
+                              I’m a great place for you to tell a story and let your users know a
+                              little more about you.</p>                                                               
+                    </div> 
+          </div>   
+          
+          <div class="row-2">
+            <div class="coul-2">
+              <img src="social.jpg" alt="">
+            </div>
+
+            <div class="coul-2">
+              <div class="con">
+              <h1>Built for Creatives,<br> by Creatives</h1>
+              <div class="coul-sm">
+                <p>I'm a paragraph. Click here to add your own text and edit<br>
+                   me. It’s easy. Just click “Edit Text” or double click me to<br>
+                    add your own content and make changes to the font. I’m<br>
+                     a great place for you to tell a story and let your users<br>
+                     know a little more about you.</p>
+              </div>
+                  <div class="security">
+                    <span class="icon-1"> <i class="fa fa-object-group"></i> <h6>All-In-One <br> Toolkit  </h6></span>              
+                    <span class="icon-1"> <i class="fa fa-folder"></i> <h6>Integrated <br> File Sharing</h6></span>
+                    <span class="icon-1"> <i class="fa fa-paint-brush"></i> <h6>Total Design <br>Freedom</h6></span>
+                  </div>
+                </div>
+             </div>     
+        </div>
+
+        <div class="pink">
+          <div class="container">
+            <h2>Trusted Among Industry Leaders</h2>
+<div class="ppp">
+            <p>I'm a paragraph. Click here to add your own text and edit me.<br>
+               It’s easy. Just click “Edit Text” or double click me to add your<br>
+                own content and make changes to the font.</p>
+              </div>
+                <span class="icon-2"> <i class="	fa fa-asterisk"></i> <h6>Integrated <br>File Sharing</h6></span>
+                <span class="icon-2"> <i class="fa fa-object-group"></i> <h6>All-In-One <br> Toolkit  </h6></span>              
+                <span class="icon-2"> <i class="fa fa-folder"></i> <h6>Integrated <br> File Sharing</h6></span>
+                <span class="icon-2"> <i class="fa fa-paint-brush"></i> <h6>Total Design <br>Freedom</h6></span>
+
+                <span class="icon-2"> <i class="	fa fa-asterisk"></i> <h6>Integrated <br>File Sharing</h6></span>
+                <span class="icon-2"> <i class="fa fa-object-group"></i> <h6>All-In-One <br> Toolkit  </h6></span>              
+                <span class="icon-2"> <i class="fa fa-folder"></i> <h6>Integrated <br> File Sharing</h6></span>
+                <span class="icon-2"> <i class="fa fa-paint-brush"></i> <h6>Total Design <br>Freedom</h6></span>
+          </div> 
+        </div>
+
+  
+
+
+  </body>
+</html>
